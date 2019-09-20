@@ -3,11 +3,21 @@ package mgic
 fun main(args:Array<String>)
 {
     var fortune: String
-    for (i in 1..10) {
+   /* for (i in 1..10) {
         fortune = getFortuneCookie()
         println("\nYour fortune is: $fortune")
         if (fortune.contains("Take it easy")) break
+    }*/
+    var n = 10;
+    while (n>1)
+    {
+        fortune = getFortuneCookie()
+        println("\nYour fortune is: $fortune")
+        if (fortune.contains("Take it easy"))
+            break
+        n--
     }
+
 
 }
 

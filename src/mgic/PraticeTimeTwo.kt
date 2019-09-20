@@ -11,8 +11,7 @@ fun main(args:Array<String>)
 
 }
 
-fun getBirthday():Int{
-    print ("\t Enter Your Birthday")
+fun getBirthday():Int{1
     return readLine()?.toIntOrNull() ?: 1
 }
 
