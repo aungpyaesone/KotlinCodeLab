@@ -10,3 +10,13 @@ class Aquarium{
         set(value) {height = (value* 1000)/(width*height)}
 
 }
+
+class Spice{
+    var name: String? = "curry"
+    var spiciness: String? = "mild"
+
+    val heat : Int
+    get() = 5
+
+
+}
