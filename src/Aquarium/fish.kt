@@ -41,7 +41,8 @@ fun main (args:Array<String>)
 {
 
    val fishone = Fish(true,20)
-  //  val fish = Fish()
+    val fishtwo = Fish(true,30)
+   val fish = Fish()
 }
 
 // init block run once when constructor calling

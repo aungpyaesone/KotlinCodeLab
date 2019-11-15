@@ -16,3 +16,32 @@ fun main(args:Array<String>)
 {
     val initOrder = InitOrderDemo("Hello")
 }
+
+open class Shape{
+    open fun draw()
+    {
+        fun fill(){}
+    }
+
+}
+
+class Circle() : Shape(){
+    override fun draw() {
+        super.draw()
+    }
+}
+
+/// // Secondary Constructor
+class  Person{
+    var children: MutableList<Person> = mutableListOf();
+    constructor(parent:Person){
+        parent.children.add(this); //delegate to primary constructor
+    }
+}
+
+class MyClass(val name:String){
+    val children: MutableList<MyClass> = mutableListOf();
+    constructor(name:String,parent:MyClass) : this(name) {
+        parent.children.add(this);
+    }
+}
